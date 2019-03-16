@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Subject */
 
-$this->title = $model->cId;
+$this->title = $model->cName;
 $this->params['breadcrumbs'][] = ['label' => 'Subjects', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -39,5 +39,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'cStatus',
         ],
     ]) ?>
+    <?= Html::a('เพิ่ม TA', ['subject-has-ta/create','id' => $model->cNumber], ['class' => 'btn btn-success']) ?>
 
 </div>
