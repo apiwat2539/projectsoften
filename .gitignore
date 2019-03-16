@@ -31,4 +31,3 @@ tests/_support/_generated
 vendor.zip
 /runtime
 /web/web_cms
-/config/db.php
