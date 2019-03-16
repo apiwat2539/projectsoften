@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "teacher".
  *
  * @property int $tId
+ * @property string $position
  * @property string $tName
  *
  * @property SubjectHasTeacher[] $subjectHasTeachers
@@ -31,6 +32,7 @@ class Teacher extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['position'], 'string', 'max' => 10],
             [['tName'], 'string', 'max' => 100],
         ];
     }
@@ -42,6 +44,7 @@ class Teacher extends \yii\db\ActiveRecord
     {
         return [
             'tId' => 'T ID',
+            'position' => 'Position',
             'tName' => 'T Name',
         ];
     }
