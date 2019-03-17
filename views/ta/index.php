@@ -21,6 +21,7 @@ $this->title = 'ผู้ช่วยอาจารย์';
         <li><a href="/projectsoften/web/subject/index">วิชา</a></li>
         <li><a href="/projectsoften/web/teacher/index">อาจารย์</a></li>
         <li class="active"><a href="/projectsoften/web/ta/index">ผู้ช่วยอาจารย์</a></li>
+        <li><a href="/projectsoften/web/data-ta/create">กำหนดผู้ช่วยอาจารย์ประจำวิชา</a></li>
       </ul>
       </div>
     </nav>
