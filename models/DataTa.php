@@ -45,7 +45,7 @@ class DataTa extends \yii\db\ActiveRecord
     {
         return [
             'dataTa_Id' => 'Data Ta  ID',
-            'ta_taId' => 'Ta Ta ID',
+            'ta_taId' => 'รหัสผู้ช่วยอาจารย์',
             'subjectId' => 'Subject ID',
             'year' => 'Year',
             'term' => 'Term',

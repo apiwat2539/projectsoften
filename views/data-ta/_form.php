@@ -18,7 +18,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'year')->textInput()->label('ปีการศึกษา') ?>
 
-    <?= $form->field($model, 'term')->textInput()->label('เทอม') ?>
+    <?= $form->field($model, 'term')->dropDownList(
+            ['1' => '1', '2' => '2']
+    )->label('เทอม') ?>
 
     <div class="form-group">
         <?= Html::submitButton('บันทึก', ['class' => 'btn btn-success']) ?>
