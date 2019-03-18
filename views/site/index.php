@@ -22,11 +22,11 @@ $this->title = 'ระบบเช็คชื่อนักศึกษา';
       </ul>
       </div>
     </nav>
-    <!-- <div class="container">
+    <div class="container">
       <ol class="breadcrumb">
           <li><a href="index">ระบบเช็คชื่อนักศึกษา</a></li>
           <li class="active">หน้าแรก</li>
       </ol>
-    </div> -->
+    </div>
 
 </div>
