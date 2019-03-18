@@ -42,8 +42,8 @@ class Student extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'stuId' => 'รหัสนักศึกษา',
-            'stuName' => 'ชื่อนักศึกษา',
+            'stuId' => 'Stu ID',
+            'stuName' => 'Stu Name',
         ];
     }
 

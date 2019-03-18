@@ -50,13 +50,13 @@ class Subject extends \yii\db\ActiveRecord
     {
         return [
             'cId' => 'C ID',
-            'cNumber' => 'รหัสวิชา',
-            'cName' => 'ชื่อวิชา',
-            'cYear' => 'ปีการศึกษา',
-            'cTerm' => 'เทอม',
-            'cSection' => 'เซคชัน',
-            'cPassword' => 'รหัสเข้าร่วม',
-            'cStatus' => 'สถานะของวิชา',
+            'cNumber' => 'C Number',
+            'cName' => 'C Name',
+            'cYear' => 'C Year',
+            'cTerm' => 'C Term',
+            'cSection' => 'C Section',
+            'cPassword' => 'C Password',
+            'cStatus' => 'C Status',
         ];
     }
 

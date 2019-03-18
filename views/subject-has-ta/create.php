@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\SubjectHasTa */
 
-$this->title = 'สร้าง TA ประจำรายวิชา';
-$this->params['breadcrumbs'][] = ['label' => 'TA ประจำรายวิชา', 'url' => ['index']];
+$this->title = 'Create Subject Has Ta';
+$this->params['breadcrumbs'][] = ['label' => 'Subject Has Tas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="subject-has-ta-create">

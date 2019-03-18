@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Subject */
 
-$this->title = 'แก้ไข: ' . $model->cNumber;
-$this->params['breadcrumbs'][] = ['label' => 'วิชา', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->cNumber, 'url' => ['view', 'id' => $model->cNumber]];
-$this->params['breadcrumbs'][] = 'แก้ไข';
+$this->title = 'Update Subject: ' . $model->cId;
+$this->params['breadcrumbs'][] = ['label' => 'Subjects', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->cId, 'url' => ['view', 'id' => $model->cId]];
+$this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="subject-update">
 
