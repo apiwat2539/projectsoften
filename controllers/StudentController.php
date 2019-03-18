@@ -44,6 +44,11 @@ class StudentController extends Controller
         ]);
     }
 
+    public function actionStudentshowclass()
+    {
+        return $this->render('studentshowclass');
+    }
+
     /**
      * Displays a single Student model.
      * @param string $id
