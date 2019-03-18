@@ -14,7 +14,7 @@ return [
     'class' => 'yii\db\Connection',
     'dsn' => 'mysql:host=localhost;dbname=projectsoften',
     'username' => 'root',
-    'password' => 'titaya',
+    'password' => 'root',
     'charset' => 'utf8',
 ];
 
