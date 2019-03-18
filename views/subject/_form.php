@@ -18,16 +18,22 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'cYear')->textInput() ?>
 
-    <?= $form->field($model, 'cTerm')->textInput() ?>
+    <?= $form->field($model, 'cTerm')->dropDownList(
+            ['1' => '1', '2' => '2']
+    ); ?>
 
-    <?= $form->field($model, 'cSection')->textInput() ?>
+    <?= $form->field($model, 'cSection')->dropDownList(
+            ['1' => '1', '2' => '2', '3' => '3', '4' => '4', '5' => '5']
+    ); ?>
 
     <?= $form->field($model, 'cPassword')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'cStatus')->textInput() ?>
+    <?= $form->field($model, 'cStatus')->dropDownList(
+            ['0' => 'ปิด', '1' => 'เปิด']
+    ); ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('บันทึก', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
