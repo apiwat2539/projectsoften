@@ -6,8 +6,8 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Subject */
 
-$this->title = $model->cId;
-$this->params['breadcrumbs'][] = ['label' => 'Subjects', 'url' => ['index']];
+$this->title = $model->cName;
+$this->params['breadcrumbs'][] = ['label' => 'วิชา', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
@@ -16,8 +16,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->cId], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->cId], [
+        <?= Html::a('แก้ไข', ['update', 'id' => $model->cId], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('ลบ', ['delete', 'id' => $model->cId], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'cId',
+            // 'cId',
             'cNumber',
             'cName',
             'cYear',
@@ -39,5 +39,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'cStatus',
         ],
     ]) ?>
+    <?= Html::a('เพิ่ม TA', ['subject-has-ta/create','id' => $model->cNumber], ['class' => 'btn btn-success']) ?>
 
 </div>

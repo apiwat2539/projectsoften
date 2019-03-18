@@ -12,9 +12,9 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'stuId')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'stuId')->textInput(['maxlength' => true])->label('รหัสนักศึกษา') ?>
 
-    <?= $form->field($model, 'stuName')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'stuName')->textInput(['maxlength' => true])->label('ชื่อนักศึกษา') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Ta */
 
-$this->title = 'Update Ta: ' . $model->taId;
-$this->params['breadcrumbs'][] = ['label' => 'Tas', 'url' => ['index']];
+$this->title = 'แก้ไข: ' . $model->taId;
+$this->params['breadcrumbs'][] = ['label' => 'ผู้ช่วยอาจารย์', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->taId, 'url' => ['view', 'id' => $model->taId]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = 'แก้ไข';
 ?>
 <div class="ta-update">
 
