@@ -47,7 +47,7 @@ class SubjectHasTa extends \yii\db\ActiveRecord
     {
         return [
             'subject_cId' => 'Subject C ID',
-            'ta_taId' => 'รหัสผู้ช่วยอาจารย์',
+            'ta_taId' => 'Ta Ta ID',
         ];
     }
 

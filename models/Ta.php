@@ -42,8 +42,8 @@ class Ta extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'taId' => 'รหัสผู้ช่วยอาจารย์',
-            'taName' => 'ชื่อผู้ช่วยอาจารย์',
+            'taId' => 'Ta ID',
+            'taName' => 'Ta Name',
         ];
     }
 
