@@ -43,9 +43,9 @@ class Teacher extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'tId' => 'T ID',
+            'tId' => 'รหัสอาจารย์',
             'position' => 'Position',
-            'tName' => 'T Name',
+            'tName' => 'ชื่ออาจารย์',
         ];
     }
 

@@ -41,7 +41,10 @@ $this->title = 'อาจารย์';
             ['class' => 'yii\grid\SerialColumn'],
 
             'tId',
-            'tName',
+            [
+              'attribute' => 'tName',
+              'value' => function($model) { return $model->position  . " " . $model->tName ;},
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

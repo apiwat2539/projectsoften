@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\DataTa */
 
-$this->title = 'Create Data Ta';
-$this->params['breadcrumbs'][] = ['label' => 'Data Tas', 'url' => ['index']];
+$this->title = 'เพิ่มผู้ช่วยอาจารย์';
+$this->params['breadcrumbs'][] = ['label' => 'จัดการ TA ประจำรายวิชา', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="data-ta-create">

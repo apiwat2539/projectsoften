@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Ta */
 
-$this->title = 'Create Ta';
-$this->params['breadcrumbs'][] = ['label' => 'Tas', 'url' => ['index']];
+$this->title = 'เพิ่มผู้ช่วยอาจารย์';
+$this->params['breadcrumbs'][] = ['label' => 'ผู้ช่วยอาจารย์', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="ta-create">

@@ -38,7 +38,6 @@ $this->title = 'นักศึกษา';
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
             'stuId',
             'stuName',
 

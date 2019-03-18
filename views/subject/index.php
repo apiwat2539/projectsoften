@@ -39,7 +39,7 @@ $this->title = 'วิชา';
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'cId',
+            // 'cId',
             'cNumber',
             'cName',
             'cYear',

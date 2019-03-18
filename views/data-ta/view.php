@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\DataTa */
 
-$this->title = $model->dataTa_Id;
+$this->title = $model->ta_taId;
 $this->params['breadcrumbs'][] = ['label' => 'Data Tas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -15,8 +15,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'dataTa_Id' => $model->dataTa_Id, 'ta_taId' => $model->ta_taId], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'dataTa_Id' => $model->dataTa_Id, 'ta_taId' => $model->ta_taId], [
+        <?= Html::a('อัพเดท', ['update', 'dataTa_Id' => $model->dataTa_Id, 'ta_taId' => $model->ta_taId], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('ลบ', ['delete', 'dataTa_Id' => $model->dataTa_Id, 'ta_taId' => $model->ta_taId], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
@@ -28,11 +28,22 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'dataTa_Id',
-            'ta_taId',
-            'subjectId',
-            'year',
-            'term',
+          [
+            'label' => 'รหัสผู้ช่วยอาจารย์',
+            'value' => $model->ta_taId,
+          ],
+          [
+            'label' => 'รหัสวิชา',
+            'value' => $model->subjectId,
+          ],
+          [
+            'label' => 'ปีการศึกษา',
+            'value' => $model->year,
+          ],
+          [
+            'label' => 'เทอม',
+            'value' => $model->term,
+          ],
         ],
     ]) ?>
 

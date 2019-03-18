@@ -12,16 +12,16 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'ta_taId')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'ta_taId')->textInput(['maxlength' => true])->label('รหัสผู้ช่วยอาจารย์') ?>
 
-    <?= $form->field($model, 'subjectId')->textInput() ?>
+    <?= $form->field($model, 'subjectId')->textInput()->label('รหัสวิชา') ?>
 
-    <?= $form->field($model, 'year')->textInput() ?>
+    <?= $form->field($model, 'year')->textInput()->label('ปีการศึกษา') ?>
 
-    <?= $form->field($model, 'term')->textInput() ?>
+    <?= $form->field($model, 'term')->textInput()->label('เทอม') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('บันทึก', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
